@@ -1,60 +1,93 @@
+/* Applied throughout */
+* { box-sizing: border-box; }
+
+/* Font imports */
 @font-face { font-family: "Special Elite"; src: url('SpecialElite-Regular.ttf'); }
 
-body {
-  background-color: #DDD;
-  text-align: center;
-  
-  font-family: "Special Elite", "Courier New";
-}
-
+/* Sectioning elements */
 h1 {
 	font-size: 40px;
 }
 
-td {
-	padding: 5px;
+h2.bomb-name {
+	display: inline-block;
+	background-color: #557;
+	padding: 0.5em;
+	border-radius: 10px;
 }
 
+body {
+  background-color: #222;
+  text-align: center;
+  
+  font-family: "Special Elite", "Courier New";
+  color: #ccc;
+}
+
+section {
+	border: 2px solid;
+	border-radius: 10px;
+	background-color: #533;
+}
+
+/* Navigation */
 nav ul {
-	list-style-type: none;
-	
-	margin: 0;
 	padding: 0;
-	
-	display: flex;
-	justify-content: center;
+}
+
+nav a {
+	text-decoration: none;
 }
 
 nav ul li {
-	display: block;
+	display: inline-block;
 	
 	padding: 14px 16px;
 	border: 2px solid black;
 	border-left-width: 0px;
 	
 	background-color: #9F1D35;
-	
-	color: #DDD;
+
 	text-shadow: 2px 2px 0px #000;
 	font-weight: bold;
 	font-size: 20px;
-	user-select: none;
-	
-	cursor: pointer;
 }
 
 nav ul li:hover {
 	background-color: #E46B81;
 }
 
-nav ul li#left {
-	border-left-width: 2px;
-}
-
 nav ul li.active {
 	background-color: #E46B81;
 }
 
-nav a {
-	text-decoration: inherit;
+a { color: #88d; }
+
+li a { color: #ddd; }
+
+/* Tables */
+table {
+	margin: 1em auto;
+	border-spacing: 5px;
+}
+
+
+td, th {
+	padding: .3em;
+	background-color: #555;
+	border-radius: 10px;
+}
+
+caption {
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 0.5em;
+}
+
+
+/* Section-specific */
+.teamsolves {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em;
 }
