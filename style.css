@@ -1,6 +1,60 @@
-body {
-  margin: auto;
+@font-face { font-family: "Special Elite"; src: url('SpecialElite-Regular.ttf'); }
 
+body {
   background-color: #DDD;
+  text-align: center;
+  
+  font-family: "Special Elite", "Courier New";
 }
 
+h1 {
+	font-size: 40px;
+}
+
+td {
+	padding: 5px;
+}
+
+nav ul {
+	list-style-type: none;
+	
+	margin: 0;
+	padding: 0;
+	
+	display: flex;
+	justify-content: center;
+}
+
+nav ul li {
+	display: block;
+	
+	padding: 14px 16px;
+	border: 2px solid black;
+	border-left-width: 0px;
+	
+	background-color: #9F1D35;
+	
+	color: #DDD;
+	text-shadow: 2px 2px 0px #000;
+	font-weight: bold;
+	font-size: 20px;
+	user-select: none;
+	
+	cursor: pointer;
+}
+
+nav ul li:hover {
+	background-color: #E46B81;
+}
+
+nav ul li#left {
+	border-left-width: 2px;
+}
+
+nav ul li.active {
+	background-color: #E46B81;
+}
+
+nav a {
+	text-decoration: inherit;
+}
