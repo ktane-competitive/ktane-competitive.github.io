@@ -14,10 +14,12 @@ h2.bomb-name {
 	background-color: #557;
 	padding: 0.5em;
 	border-radius: 10px;
+	
+	text-shadow: 2px 2px 0px #000;
 }
 
 body {
-  background-color: #222;
+  background-color: #282828;
   text-align: center;
   
   font-family: "Special Elite", "Courier New";
@@ -45,6 +47,7 @@ nav ul li {
 	padding: 14px 16px;
 	border: 2px solid black;
 	border-left-width: 0px;
+	border-radius: 10px;
 	
 	background-color: #9F1D35;
 
@@ -78,10 +81,16 @@ td, th {
 	border-radius: 10px;
 }
 
+th {
+	text-shadow: 2px 2px 0px #000;
+}
+
 caption {
 	font-size: 20px;
 	font-weight: bold;
 	margin-bottom: 0.5em;
+	
+	text-shadow: 2px 2px 0px #000;
 }
 
 
