@@ -68,10 +68,19 @@ a { color: #88d; }
 
 li a { color: #ddd; }
 
+p {
+	max-width: 800px;
+	text-align: left;
+	margin: auto;
+}
+		
+
 /* Tables */
 table {
 	margin: 1em auto;
 	border-spacing: 5px;
+	
+	margin-bottom: 3em;
 }
 
 
@@ -95,8 +104,3 @@ caption {
 
 
 /* Section-specific */
-.teamsolves {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 2em;
-}
